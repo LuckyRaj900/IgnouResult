@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="GENERATOR" content="Microsoft Visual Studio 6.0">
+<title>Term End Results - December 2023</title>
+<h3>Term End December 2023 Exam Result</h3>
+<li> <font size="-1"> Status as on February 11, 2024</font></li>
+<br>
+</head> 
+<body bgcolor="Linen"> 
+
+<form name="Enofr" method="post" action="https://termendresult.ignou.ac.in/TermEndDec23/TermEndDec23.asp" onSubmit="return fnsubmit(this)"> 
+
+Enter your Enrolment Number: <input type="text" name="eno" maxlength="10" size="10"> 
+<input type="hidden" name="myhide" value="OK"> <input type="submit" value="Submit"> 
+</form>
+
+<font face="Arial, Helvetica, sans-serif" size="2"><b>1. Remaining results of Term-End, Assignment, Practical and Project awards is a continuous process and will be updated soon. <br><br> 2. In case any student is found 
+to be booked under unfairmeans, the result of the particular student will be Cancelled.</b></font><br>
+
+<script language="VBScript">
+function fnsubmit(frm)
+    if document.forms(0).eno.value="" then
+        msgbox "Enrolment should not be blank"
+        document.forms(0).eno.focus
+        fnsubmit=false
+    elseif len(document.forms(0).eno.value)<9 then
+        msgbox "Enrolment should be of 9 or 10 Character"
+        document.forms(0).eno.focus
+        fnsubmit=false
+    else
+        fnsubmit=true
+    end if
+end function
+</script>
+<p></p>
+</body> 
+
+<script language="javascript">
+document.forms(0).item(0).focus()
+</script>
+
+<a href="javascript:history.back()">Back </a> 
+</html>
